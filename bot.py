@@ -6,7 +6,7 @@ import os
 from datetime import datetime, timezone
 
 # --- Config ---
-TOKEN = "YOUR_BOT_TOKEN_HERE"
+TOKEN = os.environ.get("TOKEN")
 QUARANTINE_CHANNEL_ID = 1501626333652979843  # Replace with your #quarantine channel ID
 
 COOLDOWNS_FILE = "cooldowns.json"
