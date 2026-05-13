@@ -10,8 +10,8 @@ from discord.ext import tasks
 
 # --- Config ---
 TOKEN = os.environ.get("TOKEN")
-QUARANTINE_CHANNEL_ID = 1501626333652979843  # Replace with your #quarantine channel ID
-QUARANTINE_ROLE_NAME = "quarantine"         # Must match your role name exactly (case-insensitive)
+QUARANTINE_CHANNEL_ID = 975132412201828382  # Replace with your #quarantine channel ID
+QUARANTINE_ROLE_NAME = "QUARANTINE"         # Must match your role name exactly (case-insensitive)
 
 COOLDOWNS_FILE = "cooldowns.json"
  
