@@ -100,7 +100,7 @@ async def weekly_reminder():
     channel = bot.get_channel(QUARANTINE_CHANNEL_ID)
     if channel:
         await channel.send(
-            " /coinflip for a chance to get released from #quarantine "
+            " /coinflip for a chance to get released from #quarantine. "
             "Who knows, today might finally be your day 😉"
         )
 
