@@ -68,10 +68,10 @@ class CoinFlipView(discord.ui.View):
             item.disabled = True
         await interaction.response.edit_message(view=self)
 
-if result.lower() == choice.lower():
-    await interaction.followup.send(
-        f"🪙 The coin lands on **{result}**.\nYou chose {choice}. Your time in quarantine is over. You're free to go."
-    )
+        if result.lower() == choice.lower():
+            await interaction.followup.send(
+                f"🪙 The coin lands on **{result}**.\nYou chose {choice}. Your time in quarantine is over. You're free to go."
+            )
         else:
             await interaction.followup.send(
                 f"🪙 The coin lands on **{result}**.\nYou chose {choice}. So close! Better luck next time!"
